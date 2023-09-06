@@ -1,3 +1,29 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+body {
+  margin: 0;
+  display: flex;
+  overflow: hidden;
+  background-color: #053B50;
+}
+body .button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+body .button-container button {
+  background-color: #64CCC5;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 7px rgba(238, 238, 238, 0.5215686275);
+  height: 50px;
+  width: 150px;
+  font-family: "Dancing Script", cursive;
+  font-size: 2em;
+}
+body .button-container button:hover {
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=styles.css.map */
