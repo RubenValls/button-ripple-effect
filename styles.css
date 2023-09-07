@@ -29,6 +29,7 @@ body .button-container #btn:hover {
 }
 body .button-container #btn #text {
   position: absolute;
+  color: black;
   top: 5px;
   left: 23px;
   z-index: 1;
@@ -36,14 +37,13 @@ body .button-container #btn #text {
 body .button-container #btn #ripple {
   position: absolute;
   z-index: 0;
-  margin-left: 0;
-  margin-top: 0;
+  left: 0;
+  top: 0;
   border-radius: 50%;
-  height: 1px;
-  width: 1px;
+  height: 1;
+  width: 1;
   transform-origin: center;
-  transition: scale 2s;
-  background: radial-gradient(#64CCC5, rgba(238, 238, 238, 0.4588235294));
+  background: radial-gradient(#64CCC5, #053B50);
 }
 
 /*# sourceMappingURL=styles.css.map */
