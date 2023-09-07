@@ -12,7 +12,9 @@ body .button-container {
   align-items: center;
   margin: auto;
 }
-body .button-container button {
+body .button-container #btn {
+  position: relative;
+  overflow: hidden;
   background-color: #64CCC5;
   border: none;
   border-radius: 5px;
@@ -22,8 +24,26 @@ body .button-container button {
   font-family: "Dancing Script", cursive;
   font-size: 2em;
 }
-body .button-container button:hover {
+body .button-container #btn:hover {
   cursor: pointer;
+}
+body .button-container #btn #text {
+  position: absolute;
+  top: 5px;
+  left: 23px;
+  z-index: 1;
+}
+body .button-container #btn #ripple {
+  position: absolute;
+  z-index: 0;
+  margin-left: 0;
+  margin-top: 0;
+  border-radius: 50%;
+  height: 1px;
+  width: 1px;
+  transform-origin: center;
+  transition: scale 2s;
+  background: radial-gradient(#64CCC5, rgba(238, 238, 238, 0.4588235294));
 }
 
 /*# sourceMappingURL=styles.css.map */

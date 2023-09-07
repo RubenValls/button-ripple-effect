@@ -12,7 +12,9 @@ body{
         align-items: center;
         margin: auto;
 
-        button{
+        #btn{
+            position: relative;
+            overflow: hidden;
             background-color: #64CCC5;
             border: none;
             border-radius: 5px;
@@ -24,6 +26,26 @@ body{
 
             &:hover{
                 cursor: pointer;
+            }
+
+            #text{
+                position: absolute;
+                top: 5px;
+                left: 23px;
+                z-index: 1;
+            }
+
+            #ripple{
+                position: absolute;
+                z-index: 0;
+                margin-left: 0;
+                margin-top: 0;
+                border-radius: 50%;
+                height: 1px;
+                width: 1px;
+                transform-origin: center;
+                transition: scale 2s;
+                background: radial-gradient( #64CCC5, #eeeeee75,);
             }
         }
     }
